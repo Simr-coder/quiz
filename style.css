@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    /* background-color: #F5F5F57A; */
+    background-color: #35bd3995;
+    font-family: 'Poppins',sans-serif;
+    color: rgba(0, 0, 0, 0.85);
+    margin: 0;
+}
+.opening{
+   position: relative;
+    width:80%;
+    height:85vh;
+    margin-inline:auto;
+}
+.opening img{
+    width: 100%;
+  max-width: 800px;
+  margin-inline: auto;
+  display: block;
+}
+.opening h1{
+    position: absolute;
+ bottom: 0;
+ font-size: 24px;
+ font-weight: 600;
+margin-inline: auto;
+left:50%;
+transform: translate(-50%,0);
+}
+.opening p{
+    margin-inline: auto;
+    margin-bottom: 0;
+    background-color: #35BD3A;
+   width: max-content;
+font-size: 53px;
+padding: 16px;
+color: #FFFFFF;
+border-radius: 10px;
+box-shadow: 7px 7px 1px #01AB08;
+}
+.opening a{
+    text-decoration-line: none;
+    color: inherit;
+}
+footer p{
+    text-align: center;
+}
+
+
+
+
+
+
+.question-set p{
+background-color: #d9d9d954;
+border-radius: 10px;
+padding-inline: 20px;
+box-shadow: -2px -2px 0 3px #F5F5F57A;
+}
+.question-set{
+    height: 100vh;
+    overflow: hidden;
+}
+.question-set.red p{
+    box-shadow: -2px -2px 0 3px #f5f5f58f;
+    background-color: #ffffffd4;
+ }
+ .question-set.red{
+     background-color: #DBADAD;
+ }
+ .question-set.red .timer scan{
+     background-color: #C50C006E;
+ }
+ .question-set.red .next{
+     color:#C50000;
+ }
+
+ .question-set.yellow p{
+    box-shadow: -2px -2px 0 3px #f5f5f58f;
+    background-color: #ffffffd4;
+ }
+ .question-set.yellow{
+     background-color: #E4E5C7;
+ }
+ .question-set.yellow .timer scan{
+     background-color: #FEC33D;
+ }
+ .question-set.yellow .next{
+     color:#C58800;
+ }
+
+
+.question-set p, .timer,.next{
+    padding-block: 20px;
+    width: 90%;
+    margin-inline: auto;
+    font-weight: 600;
+}
+.hide{
+    display: none;
+}
+.next{
+    text-align: end;
+    color:#01AB08;
+}
+
+.timer{
+    text-align: end;
+
+}
+.timer scan{
+    background-color: #01AB08;
+    padding: 10px;
+    border-radius: 6px;
+}
+.incorrect{
+  border:2px solid red;
+}
+.option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+}
+.option span{
+    height: max-content;
+}
+.option svg{
+    width: 50px;
+  height: 24px;
+}
+.correct{
+    border:2px solid #01AB08;
+}
+.next a{
+    color: inherit;
+}
+@media(max-width:700px){
+    .option span{
+        font-size: 12px;
+    }
+}
+@media(max-width:400px){
+    .question-set p, .timer,.next{
+        font-size: 12px;
+    }
+    .option span{
+        font-size: 10px;
+    }
+}
+

@@ -1,0 +1,91 @@
+body{
+  background-color: #F6F4F0;
+  margin:0;
+  overflow: hidden;
+  
+}
+.logo-container h1{
+    margin-top: -16px;
+}
+.result-page{
+    margin-block:60px;
+    max-width: 1200px;
+    margin-inline:auto;
+    text-align: center;
+    padding-inline: 12px;
+}
+.bar{
+    max-width: 50%;
+    height: 100px;
+    margin-inline: auto;
+    margin-block: 100px;
+position: relative;
+}
+.red{
+    width: 100%;
+    height: 100%;
+    background-color: #FF7A7A;
+    border-radius: 10px;
+    box-shadow: -1.5px 0 0px 0 green;
+}
+.green{
+    width: 10%;
+    box-shadow: 1.5px 0 0px 0 #FF7A7A;
+    border-radius: 10px;
+    height: 100%;
+    background-color: green;
+}
+.retry{
+color: white;
+background-color: #35BD3A;
+width: max-content;
+margin-inline: auto;
+padding-inline: 24px;
+padding-block: 16px;
+font-size: 24px;
+font-weight: 600;
+border-radius: 4px;
+box-shadow: 6px 6px 0 #01AB08;
+
+}
+.retry a{
+    color: inherit;
+    text-decoration-line: none;
+}
+.rightPercent{
+    transform: translate(-100%);
+}
+.wrongPercent{
+    right:0;
+    transform: translate(100%);
+}
+.percent{
+    position: absolute;
+    top: 50%;
+}
+.percent h1{
+    margin: 0;
+}
+.rightPercent h1{
+    margin-left: -32px;
+}
+.wrongPercent h1{
+    margin-right: -80px;
+}
+@media(max-width:600px){
+    .percent img{
+        max-width: 50px;
+    }
+    .bar{
+        height: 60px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .retry{
+        padding: 12px;
+    }
+    .wrongPercent h1{
+        margin-right: -40px;
+    }
+}
